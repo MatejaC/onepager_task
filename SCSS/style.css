@@ -90,8 +90,8 @@ hr {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -116,8 +116,8 @@ ul {
 }
 
 .container {
-  margin: 2rem auto;
-  max-width: 1300px;
+  margin: 1rem auto;
+  max-width: 1400px;
   padding: 2rem;
 }
 
@@ -141,18 +141,24 @@ header {
   padding: 2.5rem;
 }
 
+.header1__right {
+  margin-right: -2rem;
+}
+
 .header1__en {
-  width: 40%;
-  height: 40%;
+  max-width: 50%;
+  max-height: 50%;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .header1__hamburger {
-  width: 30%;
-  height: 30%;
+  max-width: 25%;
+  max-height: 25%;
+  padding-bottom: .8rem;
 }
 
-.header2,
-.projects {
+.header2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,78 +168,93 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.5rem;
-}
-
-.header2__left,
-.projects__left {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin: -2rem 8rem 2rem 5rem;
 }
 
 .header2__pretitle {
   font-family: "Yeseva One", cursive;
-  font-size: 2rem;
-  letter-spacing: 0px;
+  font-size: 1.35rem;
   color: #FFFFFF;
   opacity: 0.7;
 }
 
 .header2__title {
   font-family: "Yeseva One", cursive;
-  font-size: 4rem;
-  letter-spacing: 0px;
+  font-size: 3.1rem;
   color: #FFFFFF;
-  opacity: 1;
+  margin: 0.1rem 0 .8rem 0rem;
 }
 
 .header2__about,
 .projects__about {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0px;
+  font-size: .85rem;
   color: #FFFFFF;
-  opacity: 1;
+  max-width: 500px;
 }
 
 .header2__image {
-  width: 30%;
-  height: 30%;
+  max-width: 30%;
+  max-height: 30%;
 }
 
 .nav2 {
   display: none;
 }
 
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .home__title {
   font-family: "Yeseva One", cursive;
-  font-size: 2.8rem;
-  letter-spacing: 0px;
+  font-size: 2.5rem;
   color: #011839;
-  opacity: 1;
   text-align: center;
 }
 
 .home__about {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0px;
+  font-size: 1.1rem;
   color: #011839;
-  opacity: 1;
   text-align: center;
+  max-width: 590px;
+  margin: 1rem 0 6rem 0;
+  position: relative;
 }
 
-.home__img {
-  max-width: 1300px;
+.home__about::after {
+  content: "";
+  display: block;
+  width: 19%;
+  position: absolute;
+  border: .1rem solid #011839;
+  top: 275%;
+  left: 40%;
+  z-index: 2;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .home__description {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  letter-spacing: 0px;
   color: #011839;
-  opacity: 1;
   max-width: 1000px;
   margin: 8rem 19rem;
 }
@@ -242,9 +263,7 @@ header {
 .DalmatiaSun__pretitle {
   font-family: "Yeseva One", cursive;
   font-size: 2rem;
-  letter-spacing: 0px;
   color: #031B3B;
-  opacity: 1;
   margin-top: 5rem;
   position: relative;
 }
@@ -267,18 +286,14 @@ header {
 .DalmatiaSun__title {
   font-family: "Yeseva One", cursive;
   font-size: 4rem;
-  letter-spacing: 0px;
   color: #031B3B;
-  opacity: 1;
 }
 
 .adriaticaLuxe__question {
   background-image: url("/assets/blue_bckg.svg");
   font-family: "Yeseva One", cursive;
   font-size: 3rem;
-  letter-spacing: 0px;
   color: #FFFFFF;
-  opacity: 1;
   text-align: left;
 }
 
@@ -392,8 +407,24 @@ header {
   background-size: cover;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem;
+}
+
 .projects__left {
   padding: 8rem 0rem 2rem 5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .projects__title {
