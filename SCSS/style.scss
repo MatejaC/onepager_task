@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yeseva+One&display=swap");
 
 // colors
-$white: #FFFFFF;
+$white: #ffffff;
 $dark1: #011839;
-$dark2: #031B3B;
-$digitalAgency:#061B33;
-$darkBlue: #2B4E72;
-$Blue: #3C639A;
-$softGray: #A1A1A1;
-$yellow: #F8B215;
-$line:#021A3A;
+$dark2: #031b3b;
+$digitalAgency: #061b33;
+$darkBlue: #2b4e72;
+$Blue: #3c639a;
+$softGray: #a1a1a1;
+$yellow: #f8b215;
+$line: #021a3a;
 
 // fonts
 
-$YesevaOne: 'Yeseva One',
-cursive;
-$Roboto: 'Roboto',
-sans-serif;
-
+$YesevaOne: "Yeseva One", cursive;
+$Roboto: "Roboto", sans-serif;
 
 html,
 body,
@@ -139,7 +136,6 @@ ul {
   padding: 2rem;
 }
 
-
 header {
   background-image: url("/assets/MaskGroup68.png");
   background-color: $white;
@@ -156,7 +152,6 @@ header {
 
 .header1__right {
   margin-right: -2rem;
-
 }
 
 .header1__en {
@@ -169,7 +164,7 @@ header {
 .header1__hamburger {
   max-width: 25%;
   max-height: 25%;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 
 .header2 {
@@ -178,8 +173,6 @@ header {
   justify-content: space-between;
   margin: -2rem 8rem 2rem 5rem;
 }
-
-
 
 .header2__pretitle {
   font-family: $YesevaOne;
@@ -192,13 +185,13 @@ header {
   font-family: $YesevaOne;
   font-size: 3.1rem;
   color: $white;
-  margin: 0.1rem 0 .8rem 0rem;
+  margin: 0.1rem 0 0.8rem 0rem;
 }
 
 .header2__about,
 .projects__about {
   font-family: $Roboto;
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: $white;
   max-width: 500px;
 }
@@ -224,7 +217,6 @@ header {
   font-size: 2.5rem;
   color: $dark1;
   text-align: center;
-
 }
 
 .home__about {
@@ -242,7 +234,7 @@ header {
   display: block;
   width: 19%;
   position: absolute;
-  border: .1rem solid #011839;
+  border: 0.1rem solid #011839;
   top: 275%;
   left: 40%;
   z-index: 2;
@@ -257,8 +249,8 @@ header {
   font-family: $Roboto;
   font-size: 1rem;
   color: $dark1;
-  max-width: 1000px;
-  margin: 8rem 19rem;
+  max-width: 650px;
+  margin: 7rem 0rem 5rem 0;
 }
 
 .adriaticaLuxe__pretitle,
@@ -272,12 +264,12 @@ header {
   &:before {
     content: "";
     display: block;
-    width: 800px;
-    height: .2rem;
+    height: 0.2rem;
     background: $dark1;
     position: absolute;
-    left: 3.5rem;
-    top: -100%;
+    left:10rem;
+    right: 10rem;
+    top: -200%;
     color: $line;
     opacity: 0.2;
   }
@@ -351,7 +343,7 @@ header {
     content: "";
     display: block;
     width: 100px;
-    height: .2rem;
+    height: 0.2rem;
     background: $dark1;
     opacity: 100;
     position: absolute;

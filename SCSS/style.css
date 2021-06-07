@@ -123,7 +123,7 @@ ul {
 
 header {
   background-image: url("/assets/MaskGroup68.png");
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -155,7 +155,7 @@ header {
 .header1__hamburger {
   max-width: 25%;
   max-height: 25%;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 
 .header2 {
@@ -174,22 +174,22 @@ header {
 .header2__pretitle {
   font-family: "Yeseva One", cursive;
   font-size: 1.35rem;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
 }
 
 .header2__title {
   font-family: "Yeseva One", cursive;
   font-size: 3.1rem;
-  color: #FFFFFF;
-  margin: 0.1rem 0 .8rem 0rem;
+  color: #ffffff;
+  margin: 0.1rem 0 0.8rem 0rem;
 }
 
 .header2__about,
 .projects__about {
   font-family: "Roboto", sans-serif;
-  font-size: .85rem;
-  color: #FFFFFF;
+  font-size: 0.85rem;
+  color: #ffffff;
   max-width: 500px;
 }
 
@@ -240,7 +240,7 @@ header {
   display: block;
   width: 19%;
   position: absolute;
-  border: .1rem solid #011839;
+  border: 0.1rem solid #011839;
   top: 275%;
   left: 40%;
   z-index: 2;
@@ -255,15 +255,15 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: #011839;
-  max-width: 1000px;
-  margin: 8rem 19rem;
+  max-width: 650px;
+  margin: 7rem 0rem 5rem 0;
 }
 
 .adriaticaLuxe__pretitle,
 .DalmatiaSun__pretitle {
   font-family: "Yeseva One", cursive;
   font-size: 2rem;
-  color: #031B3B;
+  color: #031b3b;
   margin-top: 5rem;
   position: relative;
 }
@@ -272,13 +272,13 @@ header {
 .DalmatiaSun__pretitle:before {
   content: "";
   display: block;
-  width: 800px;
-  height: .2rem;
+  height: 0.2rem;
   background: #011839;
   position: absolute;
-  left: 3.5rem;
-  top: -100%;
-  color: #021A3A;
+  left: 10rem;
+  right: 10rem;
+  top: -200%;
+  color: #021a3a;
   opacity: 0.2;
 }
 
@@ -286,14 +286,14 @@ header {
 .DalmatiaSun__title {
   font-family: "Yeseva One", cursive;
   font-size: 4rem;
-  color: #031B3B;
+  color: #031b3b;
 }
 
 .adriaticaLuxe__question {
   background-image: url("/assets/blue_bckg.svg");
   font-family: "Yeseva One", cursive;
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -316,7 +316,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   letter-spacing: 0px;
-  color: #031B3B;
+  color: #031b3b;
   opacity: 1;
   margin: 8rem 8rem 1.5rem;
 }
@@ -326,7 +326,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   letter-spacing: 0px;
-  color: #031B3B;
+  color: #031b3b;
   opacity: 1;
   margin: 4rem 8rem 2rem 19rem;
 }
@@ -358,7 +358,7 @@ header {
   content: "";
   display: block;
   width: 100px;
-  height: .2rem;
+  height: 0.2rem;
   background: #011839;
   opacity: 100;
   position: absolute;
@@ -372,7 +372,7 @@ header {
 .DalmatiaSun__SEM span,
 .DalmatiaSun__SMM span,
 .DalmatiaSun__EmailMarketing span {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .adriaticaLuxe__visitWebsite,
@@ -402,7 +402,7 @@ header {
 
 .projects {
   background-image: url("/assets/stary_bckg.png");
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -431,7 +431,7 @@ header {
   font-family: "Yeseva One", cursive;
   font-size: 2.5rem;
   max-width: 500px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -461,7 +461,7 @@ header {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #031B3B;
+  color: #031b3b;
   margin: 1.5rem 0 3rem;
 }
 
