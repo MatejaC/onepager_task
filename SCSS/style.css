@@ -259,6 +259,10 @@ header {
   margin: 7rem 0rem 5rem 0;
 }
 
+.adriaticaLuxe {
+  margin-left: 5rem;
+}
+
 .adriaticaLuxe__pretitle,
 .DalmatiaSun__pretitle {
   font-family: "Yeseva One", cursive;
@@ -289,12 +293,112 @@ header {
   color: #031b3b;
 }
 
-.adriaticaLuxe__question {
-  background-image: url("/assets/blue_bckg.svg");
+.adriaticaLuxe__background-wrapper {
+  height: 15%;
+  margin-top: 28rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  background: #015871;
+  background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #B7E8EB 100%);
+}
+
+.adriaticaLuxe__background-wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: relative;
+  top: -198px;
+  max-width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.adriaticaLuxe__background-wave:nth-of-type(2) {
+  top: -175px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@-webkit-keyframes swell {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+
+.adriaticaLuxe__combined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: -50rem;
+  max-width: 850px;
+}
+
+.adriaticaLuxe__combined-question {
+  background-color: #2b4e72;
   font-family: "Yeseva One", cursive;
   font-size: 3rem;
   color: #ffffff;
   text-align: left;
+  z-index: 10;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem;
+}
+
+.adriaticaLuxe__combined-woman-img {
+  z-index: 10;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .adriaticaLuxe__description,
