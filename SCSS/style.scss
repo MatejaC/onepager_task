@@ -133,7 +133,7 @@ ul {
 .container {
   margin: 1rem auto;
   max-width: 1400px;
-  padding: 2rem;
+  padding: 0;
 }
 
 header {
@@ -290,11 +290,11 @@ header {
 .adriaticaLuxe-background {
   height: 100%;
   margin-top: 20rem;
-  width: 100%;
   bottom: 0;
   position: relative;
   max-width: 6400px;
-  margin-left: 10rem;
+  margin-right: 0rem;
+  margin-left: -10rem;
 }
 
 .adriaticaLuxe-background__wave {
@@ -348,7 +348,6 @@ header {
 
 .adriaticaLuxe-combined {
   display: flex;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -357,22 +356,22 @@ header {
   height: auto;
   flex-direction: row;
   margin-top: -50rem;
-  max-width: 950px;
+  max-width: 984px;
   position: absolute;
 }
 
 .adriaticaLuxe-combined__question {
   background-color: $darkBlue;
   font-family: $YesevaOne;
-  font-size: 2rem;
-  color: $white;
+  font-size: 2.3rem;
+  color: #ffffff;
   text-align: left;
   z-index: 10;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 5.85rem 8rem 7rem 3rem;
+  padding: 5.65rem 8rem 7.6rem 3rem;
   min-width: 475px;
 }
 
@@ -403,7 +402,7 @@ header {
   &::after {
     content: "";
     display: block;
-        width: 77%;
+    width: 77%;
     position: absolute;
     border: 1px solid #011839;
     opacity: 40%;

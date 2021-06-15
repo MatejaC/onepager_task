@@ -118,7 +118,7 @@ ul {
 .container {
   margin: 1rem auto;
   max-width: 1400px;
-  padding: 2rem;
+  padding: 0;
 }
 
 header {
@@ -298,11 +298,11 @@ header {
 .adriaticaLuxe-background {
   height: 100%;
   margin-top: 20rem;
-  width: 100%;
   bottom: 0;
   position: relative;
   max-width: 6400px;
-  margin-left: 10rem;
+  margin-right: 0rem;
+  margin-left: -10rem;
 }
 
 .adriaticaLuxe-background__wave {
@@ -389,7 +389,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -406,14 +405,14 @@ header {
   height: auto;
   flex-direction: row;
   margin-top: -50rem;
-  max-width: 950px;
+  max-width: 984px;
   position: absolute;
 }
 
 .adriaticaLuxe-combined__question {
   background-color: #2b4e72;
   font-family: "Yeseva One", cursive;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #ffffff;
   text-align: left;
   z-index: 10;
@@ -429,7 +428,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 5.85rem 8rem 7rem 3rem;
+  padding: 5.65rem 8rem 7.6rem 3rem;
   min-width: 475px;
 }
 
