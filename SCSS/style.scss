@@ -396,18 +396,18 @@ header {
 .DalmatiaSun-description__logo {
   width: 50%;
   height: 50%;
-  margin: 4rem 0 0 14rem;
+  margin: 5rem 0 0 12.5rem;
   position: relative;
 
   &::after {
     content: "";
     display: block;
-    width: 77%;
+    width: 79%;
     position: absolute;
-    border: 1px solid #011839;
-    opacity: 40%;
-    top: 49%;
-    left: 108%;
+    border: 0.1rem solid #011839;
+    opacity: 17%;
+    top: 48%;
+    left: 98%;
     z-index: 2;
     transform: rotate(90deg);
   }
@@ -419,7 +419,8 @@ header {
   font-size: 1rem;
   text-align: left;
   color: $dark2;
-  margin: 6rem 5.5rem 1.5rem 4.5rem;
+  margin: 7.2rem 16rem 1.5rem 5rem;
+  max-width: 708px;
 }
 
 .adriaticaLuxe__text2,
@@ -429,7 +430,7 @@ header {
   letter-spacing: 0px;
   color: $dark2;
   opacity: 1;
-  margin: 4rem 8rem 2rem 19rem;
+  margin: 4rem 16.5rem 4rem 27rem;
 }
 
 .adriaticaLuxe__SEM,
@@ -443,7 +444,7 @@ header {
   font-weight: bold;
   color: $dark1;
   opacity: 1;
-  margin: 2rem 0rem 0rem 22.5rem;
+  margin: 2rem 0rem 0rem 23.5rem;
   text-align: center;
   max-width: 600px;
   position: relative;
@@ -452,12 +453,12 @@ header {
   &:before {
     content: "";
     display: block;
-    width: 100px;
+    width: 6rem;
     height: 0.2rem;
     background: $dark1;
     opacity: 100;
     position: absolute;
-    left: 3.5rem;
+    left: 4rem;
     top: 50%;
   }
 
