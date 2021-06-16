@@ -269,8 +269,8 @@ header {
     background: $dark1;
     position: absolute;
     left: 0rem;
-    right: 15.9rem;
-    top: -200%;
+    right: 11.9rem;
+    top: -157%;
     color: $line;
     opacity: 0.2;
     max-width: 990px;
@@ -292,11 +292,11 @@ header {
   position: relative;
   max-width: 6400px;
 }
-.AdriaticaLuxe-background{
+.AdriaticaLuxe-background {
   margin-top: 20rem;
 }
 .DalmatiaSun-background {
-margin-top: 0rem;
+  margin-top: 1.5rem;
 }
 
 .AdriaticaLuxe-background__wave {
@@ -354,11 +354,7 @@ margin-top: 0rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: auto;
-  margin-top: -50rem;
-  margin-left: 10rem;
-  max-width: 990px;
+  margin: -50rem 15rem 0 10rem;
   position: absolute;
   background-color: $darkBlue;
 }
@@ -395,12 +391,12 @@ margin-top: 0rem;
 
 .AdriaticaLuxe-description {
   display: flex;
-  margin-top: -28rem;
+  margin-top: -26rem;
 }
 
 .DalmatiaSun-description {
   display: flex;
-  margin-top: 31rem;
+  margin-top: 35rem;
 }
 
 .AdriaticaLuxe-description__logo,
@@ -455,8 +451,7 @@ margin-top: 0rem;
   font-weight: bold;
   color: $dark1;
   opacity: 1;
-  margin: 2rem 25rem 0rem 23.5rem;
-  text-align: center;
+  margin: 2rem 0rem 0rem 35rem;
   position: relative;
   z-index: -2;
 
@@ -468,7 +463,7 @@ margin-top: 0rem;
     background: $dark1;
     opacity: 100;
     position: absolute;
-    left: 4rem;
+    left: -7.5rem;
     top: 50%;
   }
 
@@ -508,10 +503,10 @@ margin-top: 0rem;
   font-weight: 900;
   color: $dark1;
   margin: 1.5rem;
-  margin-bottom: 6.5rem;
+  margin-bottom: 6rem;
 }
-.DalmatiaSun{
-  margin-top:6rem;
+.DalmatiaSun {
+  margin-top: 6rem;
 }
 .DalmatiaSun-combined {
   display: flex;
@@ -519,17 +514,13 @@ margin-top: 0rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: auto;
-  // margin-top: -50rem;
-  margin-left: 10rem;
-  max-width: 990px;
+  margin: 0rem 12rem 0rem 10rem;
   position: absolute;
-  background-color: $darkBlue;
+  background-color: $yellow;
 }
 
 .DalmatiaSun-combined__question {
-  background-color: $darkBlue;
+  background-color: $yellow;
   font-family: $YesevaOne;
   font-size: 2rem;
   color: $white;
@@ -539,8 +530,8 @@ margin-top: 0rem;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 5.8rem 8rem 9rem 3.3rem;
-  margin-right: 3rem;
+  padding: 0rem 0rem 0rem 3.3rem;
+  margin-right: 11rem;
 }
 
 .DalmatiaSun-combined__image {
