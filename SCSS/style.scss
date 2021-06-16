@@ -273,6 +273,7 @@ header {
     top: -200%;
     color: $line;
     opacity: 0.2;
+    max-width: 990px;
   }
 }
 
@@ -354,16 +355,16 @@ header {
   justify-content: center;
   width: 100%;
   height: auto;
-  flex-direction: row;
   margin-top: -50rem;
-  max-width: 984px;
+  max-width: 990px;
   position: absolute;
+  background-color: $darkBlue;
 }
 
 .adriaticaLuxe-combined__question {
   background-color: $darkBlue;
   font-family: $YesevaOne;
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: left;
   z-index: 10;
@@ -371,8 +372,8 @@ header {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 5.65rem 8rem 7.6rem 3rem;
-  min-width: 475px;
+  padding: 5.8rem 8rem 9rem 3.3rem;
+  margin-right: 3rem;
 }
 
 .adriaticaLuxe-combined__woman {
@@ -384,6 +385,10 @@ header {
   flex-direction: column;
   flex-basis: 100%;
   flex: 2;
+
+  img {
+    width: 100%;
+  }
 }
 
 .adriaticaLuxe-description,
@@ -481,13 +486,14 @@ header {
   background: transparent;
   cursor: pointer;
 
-  &:hover, :focus {
-    transform:scale(1.2,1.2);
-    -webkit-transform:scale(1.2,1.2);
-    -moz-transform:scale(1.2,1.2);
-    -ms-transform:scale(1.2,1.2);
-    -o-transform:scale(1.2,1.2);
-}
+  &:hover,
+  :focus {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+  }
 }
 
 .adriaticaLuxe-visitWebsite__text3,

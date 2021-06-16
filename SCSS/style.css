@@ -281,6 +281,7 @@ header {
   top: -200%;
   color: #021a3a;
   opacity: 0.2;
+  max-width: 990px;
 }
 
 .adriaticaLuxe__title,
@@ -403,16 +404,16 @@ header {
           justify-content: center;
   width: 100%;
   height: auto;
-  flex-direction: row;
   margin-top: -50rem;
-  max-width: 984px;
+  max-width: 990px;
   position: absolute;
+  background-color: #2b4e72;
 }
 
 .adriaticaLuxe-combined__question {
   background-color: #2b4e72;
   font-family: "Yeseva One", cursive;
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: left;
   z-index: 10;
@@ -428,8 +429,8 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 5.65rem 8rem 7.6rem 3rem;
-  min-width: 475px;
+  padding: 5.8rem 8rem 9rem 3.3rem;
+  margin-right: 3rem;
 }
 
 .adriaticaLuxe-combined__woman {
@@ -449,6 +450,10 @@ header {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.adriaticaLuxe-combined__woman img {
+  width: 100%;
 }
 
 .adriaticaLuxe-description,
@@ -563,7 +568,8 @@ header {
   cursor: pointer;
 }
 
-.adriaticaLuxe-visitWebsite__right-icon-button:hover, .adriaticaLuxe-visitWebsite__right-icon-button :focus,
+.adriaticaLuxe-visitWebsite__right-icon-button:hover,
+.adriaticaLuxe-visitWebsite__right-icon-button :focus,
 .DalmatiaSun-visitWebsite__rightIcon:hover,
 .DalmatiaSun-visitWebsite__rightIcon :focus {
   transform: scale(1.2, 1.2);
