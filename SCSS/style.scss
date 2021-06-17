@@ -270,10 +270,9 @@ header {
     position: absolute;
     left: 0rem;
     right: 11.9rem;
-    top: -157%;
+    top: -136%;
     color: $line;
     opacity: 0.2;
-    max-width: 990px;
   }
 }
 
@@ -371,7 +370,7 @@ header {
   flex-basis: 100%;
   flex: 1;
   padding: 5.8rem 8rem 9rem 3.3rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 
 .AdriaticaLuxe-combined__image {
@@ -426,8 +425,7 @@ header {
   font-size: 1rem;
   text-align: left;
   color: $dark2;
-  margin: 7.2rem 16rem 1.5rem 5rem;
-  max-width: 708px;
+  margin: 7.2rem 12.5rem 1.5rem 5rem;
 }
 
 .AdriaticaLuxe__text2,
@@ -437,7 +435,7 @@ header {
   letter-spacing: 0px;
   color: $dark2;
   opacity: 1;
-  margin: 3rem 16.5rem 3rem 27rem;
+  margin: 3rem 13rem 3rem 27rem;
 }
 
 .AdriaticaLuxe__SEM,
@@ -503,7 +501,7 @@ header {
   font-weight: 900;
   color: $dark1;
   margin: 1.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 .DalmatiaSun {
   margin-top: 6rem;
@@ -530,8 +528,8 @@ header {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 0rem 0rem 0rem 3.3rem;
-  margin-right: 11rem;
+  padding: 0rem 6rem 0rem 3.3rem;
+  margin-right: 5rem;
 }
 
 .DalmatiaSun-combined__image {
@@ -550,43 +548,53 @@ header {
 }
 
 .projects {
-  background-image: url("/assets/stary_bckg.png");
+  background-image: url("/assets/MaskGroup72.svg");
   background-color: $white;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.projects {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding: 11.5rem 5rem;
 }
 
 .projects-left {
-  padding: 8rem 0rem 2rem 5rem;
+  padding-top: 6rem;
   flex-grow: 1;
 }
 
 .projects-left__title {
   font-family: $YesevaOne;
   font-size: 2.5rem;
-  max-width: 500px;
+  margin-right: 3rem;
   color: $white;
   opacity: 1;
 }
-
+.projects-left__about{
+  font-family: $Roboto;
+  font-size: 1rem;
+  color: $white;
+  margin: 1.2rem 2.5rem 1.5rem 0;
+}
 .projects__rocket {
-  width: 50%;
-  height: 50%;
+  width: 126%;
+  height: 126%;
 }
 
-.projects-left__rightIcon {
+.projects-left-talk{
+display:flex;
+}
+
+.projects-left-talk__right-icon-button {
   width: 34px;
   height: 34px;
   background: transparent;
+  border:none;
+  color:$white;
 }
-
+.projects-left-talk__talk{
+  color:$white
+}
 .contact {
   margin-top: 5rem;
 }
