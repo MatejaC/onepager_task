@@ -712,19 +712,24 @@ header {
 }
 
 .projects-left-talk__right-icon-button {
-  width: 34px;
-  height: 34px;
-  background: transparent;
+  width: 7%;
+  height: 7%;
   border: none;
-  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.projects-left-talk__right-icon-button:hover,
+.projects-left-talk__right-icon-button :focus {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .projects-left-talk__talk {
   color: #ffffff;
-}
-
-.contact {
-  margin-top: 5rem;
+  margin: .3rem 0 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .contact__title {
@@ -732,6 +737,7 @@ header {
   font-family: "Yeseva One", cursive;
   font-size: 2.5rem;
   color: #011839;
+  margin-top: 1rem;
 }
 
 .contact__about {
