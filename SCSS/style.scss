@@ -482,7 +482,6 @@ header {
   height: 8%;
   border: none;
   background: transparent;
-  cursor: pointer;
 
   &:hover,
   :focus {
@@ -570,7 +569,7 @@ header {
   color: $white;
   opacity: 1;
 }
-.projects-left__about{
+.projects-left__about {
   font-family: $Roboto;
   font-size: 1rem;
   color: $white;
@@ -581,8 +580,8 @@ header {
   height: 126%;
 }
 
-.projects-left-talk{
-display:flex;
+.projects-left-talk {
+  display: flex;
 }
 
 .projects-left-talk__right-icon-button {
@@ -590,18 +589,17 @@ display:flex;
   height: 7%;
   border: none;
   background: transparent;
-  cursor: pointer;
 
   &:hover,
   :focus {
     transform: scale(1.2, 1.2);
-}
+  }
 }
 
-.projects-left-talk__talk{
-  color:$white;
-  margin: .3rem 0 0 0.3rem;
-  font-size:1rem;
+.projects-left-talk__talk {
+  color: $white;
+  margin: 0.3rem 0 0 0.3rem;
+  font-size: 1rem;
   font-weight: 900;
 }
 
@@ -624,9 +622,51 @@ display:flex;
 .subscription-and-SocialLinks-wrap {
   display: flex;
 }
-
 .subscribe {
   display: flex;
+  justify-content: space-between;
+  flex:1;
+  background-color: $darkBlue;
+  color: $white;
+  border: none;
+  border-radius: 2rem;
+}
+.subscribe__input {
+  background-color: $darkBlue;
+  color: $white;
+  border: none;
+  font-size:.9rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.subscribe-wrap {
+  display: flex;
+}
+.subscribe-wrap__icon-button {
+  width: 26%;
+  border: none;
+  background: transparent;
+
+  &:hover,
+  :focus {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+.subscribe-wrap__text{
+  font-size: 1rem;
+  margin: .6rem 0 0 .3rem;
+  font-weight:900;
+}
+
+.socialLinks{
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+    margin-left: 2rem;
 }
 
 .certificates {

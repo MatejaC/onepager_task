@@ -566,7 +566,6 @@ header {
   height: 8%;
   border: none;
   background: transparent;
-  cursor: pointer;
 }
 
 .AdriaticaLuxe-visitWebsite__right-icon-button:hover,
@@ -716,7 +715,6 @@ header {
   height: 7%;
   border: none;
   background: transparent;
-  cursor: pointer;
 }
 
 .projects-left-talk__right-icon-button:hover,
@@ -727,7 +725,7 @@ header {
 
 .projects-left-talk__talk {
   color: #ffffff;
-  margin: .3rem 0 0 0.3rem;
+  margin: 0.3rem 0 0 0.3rem;
   font-size: 1rem;
   font-weight: 900;
 }
@@ -758,6 +756,65 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #2b4e72;
+  color: #ffffff;
+  border: none;
+  border-radius: 2rem;
+}
+
+.subscribe__input {
+  background-color: #2b4e72;
+  color: #ffffff;
+  border: none;
+  font-size: .9rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.subscribe-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe-wrap__icon-button {
+  width: 26%;
+  border: none;
+  background: transparent;
+}
+
+.subscribe-wrap__icon-button:hover,
+.subscribe-wrap__icon-button :focus {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.subscribe-wrap__text {
+  font-size: 1rem;
+  margin: .6rem 0 0 .3rem;
+  font-weight: 900;
+}
+
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2rem;
 }
 
 .certificates img {
