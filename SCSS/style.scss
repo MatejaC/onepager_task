@@ -99,6 +99,11 @@ hr {
   padding: 0;
   border: 0;
 }
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
 
 .clearfix {
   zoom: 1;
@@ -123,11 +128,6 @@ html {
 
 img {
   max-width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
 
 .container {
@@ -667,17 +667,20 @@ input:-webkit-autofill {
   -webkit-text-fill-color: $white !important;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color:$white;
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $white;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $white;;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: $white;;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $white;
 }
 
 .subscribe-wrap {
@@ -710,7 +713,27 @@ input:-webkit-autofill {
   margin-right: 5rem;
 }
 
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5rem 12rem 5rem 3rem;
+  
+
+  & li,
+  & a {
+    list-style: none;
+    text-decoration: none;
+    font-family: $YesevaOne;
+  font-size: 1rem;
+  color: $softGray;
+  }
+}
+
+
 .certificates {
+  display:flex;
+  flex-wrap: wrap;
   & img {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);

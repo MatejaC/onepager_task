@@ -83,6 +83,12 @@ hr {
   border: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
 .clearfix {
   zoom: 1;
 }
@@ -108,11 +114,6 @@ html {
 
 img {
   max-width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
 
 .container {
@@ -880,6 +881,37 @@ input:-webkit-autofill {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 5rem;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem 12rem 5rem 3rem;
+}
+
+.footer-nav li,
+.footer-nav a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Yeseva One", cursive;
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+
+.certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .certificates img {
