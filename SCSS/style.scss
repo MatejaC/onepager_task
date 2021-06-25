@@ -9,7 +9,8 @@ $darkBlue: #2b4e72;
 $Blue: #3c639a;
 $softGray: #a1a1a1;
 $yellow: #f8b215;
-$line: #021a3a;
+$line1: #021a3a;
+$line2: #939393;
 
 // fonts
 
@@ -99,7 +100,7 @@ hr {
   padding: 0;
   border: 0;
 }
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
@@ -234,7 +235,7 @@ header {
   display: block;
   width: 19%;
   position: absolute;
-  border: 0.1rem solid #011839;
+  border: 0.1rem solid $dark1;
   top: 275%;
   left: 40%;
   z-index: 2;
@@ -266,12 +267,11 @@ header {
     content: "";
     display: block;
     height: 0.2rem;
-    background: $dark1;
+    background: $line1;
     position: absolute;
     left: 0rem;
     right: 11.9rem;
     top: -136%;
-    color: $line;
     opacity: 0.2;
   }
 }
@@ -410,7 +410,7 @@ header {
     display: block;
     width: 79%;
     position: absolute;
-    border: 0.1rem solid #011839;
+    border: 0.1rem solid $dark1;
     opacity: 17%;
     top: 48%;
     left: 98%;
@@ -458,8 +458,8 @@ header {
     display: block;
     width: 6rem;
     height: 0.2rem;
-    background: $dark1;
-    opacity: 100;
+    background: $line1;
+    opacity: 0.2;
     position: absolute;
     left: -7.5rem;
     top: 50%;
@@ -718,30 +718,59 @@ input:-webkit-autofill {
   flex-direction: row;
   justify-content: space-between;
   margin: 5rem 12rem 5rem 3rem;
-  
 
   & li,
   & a {
     list-style: none;
     text-decoration: none;
     font-family: $YesevaOne;
-  font-size: 1rem;
-  color: $softGray;
+    font-size: 1rem;
+    color: $softGray;
   }
 }
-
-
 .certificates {
-  display:flex;
+  margin: 0rem 0 0 5rem;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 0.1rem;
+    width: 77rem;
+    opacity: 0.4;
+    background: $line2;
+  }
+    &::before{
+      margin-top: -3rem;
+    }
+        
+  &::after {
+        margin-top: 17rem;
+  }
+}
+.certificates__cisex,
+.certificates__osijek,
+.certificates__clutch,
+.certificates__tda,
+.certificates__tia {
+  width: 6%;
+  height: 6%;
+  margin-right: 8rem;
+  padding-bottom: 3rem;
+}
+
+.certificates__agency {
+  width: 14%;
+  height: 14%;
+  margin-right: 5rem;
+}
+.certificates {
+  display: flex;
   flex-wrap: wrap;
   & img {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     opacity: 40%;
   }
-}
-
-.certificates__tia {
-  width: 20%;
-  height: 20%;
 }
