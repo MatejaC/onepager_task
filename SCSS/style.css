@@ -302,10 +302,6 @@ header {
   margin-top: 20rem;
 }
 
-.DalmatiaSun-background {
-  margin-top: 1.5rem;
-}
-
 .AdriaticaLuxe-background__wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: relative;
@@ -464,7 +460,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 35rem;
+  margin-top: -17rem;
 }
 
 .AdriaticaLuxe-description__logo,
@@ -567,10 +563,10 @@ header {
   background: transparent;
 }
 
-.AdriaticaLuxe-visitWebsite__right-icon-button:hover,
-.AdriaticaLuxe-visitWebsite__right-icon-button :focus,
+.AdriaticaLuxe-visitWebsite__right-icon-button:hover, .AdriaticaLuxe-visitWebsite__right-icon-button:focus, .AdriaticaLuxe-visitWebsite__right-icon-button:active,
 .DalmatiaSun-visitWebsite__right-icon-button:hover,
-.DalmatiaSun-visitWebsite__right-icon-button :focus {
+.DalmatiaSun-visitWebsite__right-icon-button:focus,
+.DalmatiaSun-visitWebsite__right-icon-button:active {
   transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -584,12 +580,66 @@ header {
   font-size: 1.3rem;
   font-weight: 900;
   color: #011839;
-  margin: 1.5rem;
+  margin: 1.3rem;
   margin-bottom: 4.5rem;
 }
 
 .DalmatiaSun {
   margin-top: 6rem;
+}
+
+.DalmatiaSun-background {
+  margin-top: 23rem;
+}
+
+.DalmatiaSun-background__wave {
+  background: url("/assets/yellow_wave.svg") repeat-x;
+  position: relative;
+  top: -250px;
+  max-width: 6400px;
+  height: 250px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.DalmatiaSun-background__wave:nth-of-type(2) {
+  top: -28rem;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0% {
+    transform: translate3d(0, -25px, 0);
+    -webkit-transform: translate3d(0, -25px, 0);
+    -moz-transform: translate3d(0, -25px, 0);
+    -ms-transform: translate3d(0, -25px, 0);
+    -o-transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
 }
 
 .DalmatiaSun-combined {
@@ -608,7 +658,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0rem 12rem 0rem 10rem;
+  margin: -54rem 12rem -20rem 10rem;
   position: absolute;
   background-color: #f8b215;
 }
@@ -716,15 +766,17 @@ header {
   background: transparent;
 }
 
-.projects-left-talk__right-icon-button:hover,
-.projects-left-talk__right-icon-button :focus {
+.projects-left-talk__right-icon-button:hover, .projects-left-talk__right-icon-button:focus, .projects-left-talk__right-icon-button:active {
+  transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
 }
 
 .projects-left-talk__talk {
   color: #ffffff;
-  margin: 0.3rem 0 0 0.3rem;
+  padding: 0.4rem 0 0 0.3rem;
   font-size: 1rem;
   font-weight: 900;
 }
@@ -766,7 +818,7 @@ header {
   color: #ffffff;
   border: none;
   border-radius: 2rem;
-  margin: 0 5rem 0 5rem;
+  margin: 0 4rem 0 4rem;
 }
 
 .subscribe__input {
@@ -850,15 +902,18 @@ input:-webkit-autofill {
 }
 
 .subscribe-wrap__icon-button {
-  width: 35%;
+  width: 28%;
   border: none;
   background: transparent;
-  margin: 0.4rem 0 0 0.5rem;
+  padding: 0.3rem 0.4rem 0 0;
 }
 
-.subscribe-wrap__icon-button:hover, .subscribe-wrap__icon-button:focus {
+.subscribe-wrap__icon-button:hover, .subscribe-wrap__icon-button:focus, .subscribe-wrap__icon-button:active {
+  transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
 }
 
 .subscribe-wrap__text {
@@ -955,5 +1010,42 @@ input:-webkit-autofill {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   opacity: 40%;
+}
+
+.copyright__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.copyright__terms li,
+.copyright__terms a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #a1a1a1;
+  margin: 2rem 0 0.7rem 1.3rem;
+}
+
+.copyright__disclaimer,
+.copyright__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #a1a1a1;
+}
+
+.copyright__disclaimer {
+  margin: 0 5rem 5rem;
+}
+
+.copyright__text {
+  margin: 3rem 5rem;
 }
 /*# sourceMappingURL=style.css.map */
