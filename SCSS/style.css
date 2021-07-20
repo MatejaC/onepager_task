@@ -116,19 +116,20 @@ img {
 }
 
 .container {
-  margin: 1rem auto;
+  margin: 0rem auto;
   max-width: 1400px;
-  padding: 0;
-}
-
-header {
-  background-image: url("/assets/MaskGroup68.png");
+  padding: 1rem;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .header1 {
+  color: #ffffff;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,27 +139,58 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.5rem;
+  padding: 2rem 7rem;
+  -webkit-transition: background 250ms ease-in;
+  transition: background 250ms ease-in;
 }
 
-.header1__right {
-  margin-right: -2rem;
+.header-scrolled {
+  padding: 1rem 7rem;
+  background-color: #4279A3;
+  color: #011839;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-.header1__en {
+.header1-right__en {
   max-width: 50%;
   max-height: 50%;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
 }
 
-.header1__hamburger {
+/* .header-scrolled-right__en {
+  max-width: 50%;
+  max-height: 50%;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  color: $dark1;
+} */
+.header1-right__hamburger {
   max-width: 25%;
   max-height: 25%;
   padding-bottom: 0.8rem;
 }
 
+/* .header-scrolled-right__hamburger {
+  max-width: 25%;
+  max-height: 25%;
+  color: $dark1;
+} */
 .header2 {
+  background-image: url("/assets/MaskGroup68.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +200,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -2rem 8rem 2rem 5rem;
+  padding: 6rem 3rem 2rem 3rem;
+  margin-bottom: 15rem;
+  color: #ffffff;
 }
 
 .header2__pretitle {
@@ -658,7 +692,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -54rem 12rem -20rem 10rem;
+  margin: -53rem 12rem -20rem 10rem;
   position: absolute;
   background-color: #f8b215;
 }
