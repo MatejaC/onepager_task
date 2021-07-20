@@ -1,0 +1,15 @@
+<svg id="Component_12_1" data-name="Component 12 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.732" height="29" viewBox="0 0 93.732 29">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="40" height="29" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_5219" data-name="Group 5219" transform="translate(-1678 -23)" opacity="0.3">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(1678 23)" clip-path="url(#clip-path)">
+      <g transform="translate(-1678 -23)">
+        <text id="EN" transform="translate(1678 23)" fill="#000" font-size="20" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="7.383" y="21">EN</tspan></text>
+      </g>
+    </g>
+    <path id="Path_3099" data-name="Path 3099" d="M50.732,121.5H-.732v-4.98H50.732Z" transform="translate(1721 -81.52)" fill="#000"/>
+  </g>
+</svg>
