@@ -12,6 +12,7 @@ const sectionOneObserver = new IntersectionObserver(function (
   sectionOneObserver
 ) {
   entries.forEach((entry) => {
+    console.log(entry.target);
     if (entry.isIntersecting) {
       header.classList.add("header-scrolled");
     } else {

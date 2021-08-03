@@ -17,85 +17,22 @@ $line2: #939393;
 $YesevaOne: "Yeseva One", cursive;
 $Roboto: "Roboto", sans-serif;
 
-html,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body,
-div,
-span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
 figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-hr {
+blockquote,
+dl,
+dd {
   margin: 0;
   padding: 0;
   border: 0;
@@ -106,39 +43,58 @@ ol[role="list"] {
   list-style: none;
 }
 
-.clearfix {
-  zoom: 1;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-html {
-  box-sizing: border-box;
+html:focus-within {
   scroll-behavior: smooth;
 }
 
-img {
-  max-width: 100%;
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+} 
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 .container {
   margin: 0rem auto;
-  max-width: 1400px;
-  padding: 1rem;
+  max-width: 1440px;
+  padding: 0rem;
   background-color: $white;
 }
 
 .header1 {
+  max-width: 1440px;
+   margin: 0rem auto;
   color: $white;
   background: transparent;
   position: fixed;
@@ -149,12 +105,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 7rem;
+  padding: 1rem 3rem;
   transition: background 250ms ease-in;
 }
 
 .header-scrolled {
-  padding: 1rem 7rem;
+   margin: 0rem auto;
+  max-width: 1440px;
+  padding: 1rem 3rem;
   background-color: #4279A3;
   color: $dark1;
   z-index: 999;
@@ -162,6 +120,9 @@ img {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 3px 20px rgba(black, 0.2);
+}
+.header1-right{
+  display:flex;
 }
 
 .header1-right__en {
@@ -171,24 +132,11 @@ img {
   padding-bottom: 1.5rem;
 }
 
-/* .header-scrolled-right__en {
-  max-width: 50%;
-  max-height: 50%;
-  padding-right: 1rem;
-  padding-bottom: 0.5rem;
-  color: $dark1;
-} */
-
 .header1-right__hamburger {
   max-width: 25%;
   max-height: 25%;
   padding-bottom: 0.8rem;
 }
-/* .header-scrolled-right__hamburger {
-  max-width: 25%;
-  max-height: 25%;
-  color: $dark1;
-} */
 
 .header2 {
   background-image: url("/assets/MaskGroup68.png");
@@ -197,7 +145,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6rem 3rem 2rem 3rem;
+  padding: 6rem 6rem 2rem 6rem;
   margin-bottom: 15rem;
   color:$white;
 }
@@ -288,7 +236,7 @@ img {
   color: $dark2;
   margin-top: 5rem;
   position: relative;
-  margin-left: 10rem;
+  margin-left: 7rem;
 
   &:before {
     content: "";
@@ -308,7 +256,7 @@ img {
   font-family: $YesevaOne;
   font-size: 4rem;
   color: $dark2;
-  margin-left: 10rem;
+  margin-left: 7rem;
 }
 
 .AdriaticaLuxe-background,
@@ -383,7 +331,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: -50rem 15rem 0 10rem;
+  margin: -50rem 20rem 0 7rem;
   position: absolute;
   background-color: $darkBlue;
 }
@@ -420,7 +368,7 @@ img {
 
 .AdriaticaLuxe-description {
   display: flex;
-  margin-top: -26rem;
+  margin-top: -20rem;
 }
 
 .DalmatiaSun-description {
@@ -467,20 +415,22 @@ img {
   opacity: 1;
   margin: 3rem 13rem 3rem 27rem;
 }
-
-.AdriaticaLuxe__SEM,
-.AdriaticaLuxe__SMM,
-.AdriaticaLuxe__EmailMarketing,
-.DalmatiaSun__SEM,
-.DalmatiaSun__SMM,
-.DalmatiaSun__EmailMarketing {
+.AdriaticaLuxe-marketing{
+  position:relative;
+}
+.AdriaticaLuxe-marketing__SEM,
+.AdriaticaLuxe-marketing__SMM,
+.AdriaticaLuxe-marketing__EmailMarketing,
+.DalmatiaSun-marketing__SEM,
+.DalmatiaSun-marketing__SMM,
+.DalmatiaSun-marketing__EmailMarketing {
   font-family: $Roboto;
   font-size: 1rem;
   font-weight: bold;
   color: $dark1;
   opacity: 1;
   margin: 2rem 0rem 0rem 35rem;
-  position: relative;
+
   z-index: -2;
 
   &:before {
@@ -490,9 +440,9 @@ img {
     height: 0.2rem;
     background: $line1;
     opacity: 0.2;
-    position: absolute;
+    position: relative;
     left: -7.5rem;
-    top: 50%;
+    top: .7rem;
   }
 
   span {
