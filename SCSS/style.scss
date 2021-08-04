@@ -145,9 +145,13 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 7rem 7rem 0rem 6rem;
+  padding: 8rem 7rem 0rem 6rem;
   margin-bottom: 14rem;
   color:$white;
+}
+
+.header2__left{
+  margin-top:-7rem;
 }
 
 .header2__pretitle {
