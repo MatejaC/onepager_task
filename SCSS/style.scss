@@ -50,7 +50,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-} 
+}
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -60,6 +60,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  object-fit:contain;
 }
 
 input,
@@ -69,11 +70,21 @@ select {
   font: inherit;
 }
 
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+td {
+  vertical-align: middle;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -84,7 +95,6 @@ select {
   }
 }
 
-
 .container {
   margin: 0rem auto;
   max-width: 1440px;
@@ -94,7 +104,7 @@ select {
 
 .header1 {
   max-width: 1440px;
-   margin: 0rem auto;
+  margin: 0rem auto;
   color: $white;
   background: transparent;
   position: fixed;
@@ -110,10 +120,10 @@ select {
 }
 
 .header-scrolled {
-   margin: 0rem auto;
+  margin: 0rem auto;
   max-width: 1440px;
   padding: 1rem 3rem;
-  background-color: #4279A3;
+  background-color: #4279a3;
   color: $dark1;
   z-index: 999;
   display: flex;
@@ -121,8 +131,8 @@ select {
   justify-content: space-between;
   box-shadow: 0 3px 20px rgba(black, 0.2);
 }
-.header1-right{
-  display:flex;
+.header1-right {
+  display: flex;
 }
 
 .header1-right__en {
@@ -147,11 +157,11 @@ select {
   justify-content: space-between;
   padding: 8rem 7rem 0rem 6rem;
   margin-bottom: 14rem;
-  color:$white;
+  color: $white;
 }
 
-.header2__left{
-  margin-top:-7rem;
+.header2__left {
+  margin-top: -7rem;
 }
 
 .header2__pretitle {
@@ -240,7 +250,7 @@ select {
   color: $dark2;
   margin-top: 5rem;
   position: relative;
-  margin-left: 7rem;
+  margin-left: 10rem;
 
   &:before {
     content: "";
@@ -260,7 +270,7 @@ select {
   font-family: $YesevaOne;
   font-size: 4rem;
   color: $dark2;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 
 .AdriaticaLuxe-background,
@@ -335,7 +345,7 @@ select {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: -50rem 20rem 0 7rem;
+  margin: -49rem 17rem 0 10rem;
   position: absolute;
   background-color: $darkBlue;
 }
@@ -372,12 +382,12 @@ select {
 
 .AdriaticaLuxe-description {
   display: flex;
-  margin-top: -20rem;
+  margin-top: -23rem;
 }
 
 .DalmatiaSun-description {
   display: flex;
-  margin-top: -17rem;
+  margin-top: -13rem;
 }
 
 .AdriaticaLuxe-description__logo,
@@ -419,8 +429,8 @@ select {
   opacity: 1;
   margin: 3rem 13rem 3rem 27rem;
 }
-.AdriaticaLuxe-marketing{
-  position:relative;
+.AdriaticaLuxe-marketing {
+  position: relative;
 }
 .AdriaticaLuxe-marketing__SEM,
 .AdriaticaLuxe-marketing__SMM,
@@ -446,7 +456,7 @@ select {
     opacity: 0.2;
     position: relative;
     left: -7.5rem;
-    top: .7rem;
+    top: 0.7rem;
   }
 
   span {
@@ -555,9 +565,10 @@ select {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: -53rem 12rem -20rem 10rem;
+  margin: -52rem 17rem 0 10rem;
   position: absolute;
   background-color: $yellow;
+  
 }
 
 .DalmatiaSun-combined__question {
@@ -571,8 +582,7 @@ select {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 0rem 6rem 0rem 3.3rem;
-  margin-right: 5rem;
+  padding: 0rem 7rem 0rem 3.3rem;
 }
 
 .DalmatiaSun-combined__image {

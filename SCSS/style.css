@@ -43,6 +43,8 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 input,
@@ -50,6 +52,18 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  vertical-align: middle;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -104,7 +118,7 @@ select {
   margin: 0rem auto;
   max-width: 1440px;
   padding: 1rem 3rem;
-  background-color: #4279A3;
+  background-color: #4279a3;
   color: #011839;
   z-index: 999;
   display: -webkit-box;
@@ -256,7 +270,7 @@ select {
   color: #031b3b;
   margin-top: 5rem;
   position: relative;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 
 .AdriaticaLuxe__pretitle:before,
@@ -277,7 +291,7 @@ select {
   font-family: "Yeseva One", cursive;
   font-size: 4rem;
   color: #031b3b;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 
 .AdriaticaLuxe-background,
@@ -388,7 +402,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -50rem 20rem 0 7rem;
+  margin: -49rem 17rem 0 10rem;
   position: absolute;
   background-color: #2b4e72;
 }
@@ -443,14 +457,14 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -20rem;
+  margin-top: -23rem;
 }
 
 .DalmatiaSun-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -17rem;
+  margin-top: -13rem;
 }
 
 .AdriaticaLuxe-description__logo,
@@ -528,7 +542,7 @@ select {
   opacity: 0.2;
   position: relative;
   left: -7.5rem;
-  top: .7rem;
+  top: 0.7rem;
 }
 
 .AdriaticaLuxe-marketing__SEM span,
@@ -651,7 +665,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -53rem 12rem -20rem 10rem;
+  margin: -52rem 17rem 0 10rem;
   position: absolute;
   background-color: #f8b215;
 }
@@ -675,8 +689,7 @@ select {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0rem 6rem 0rem 3.3rem;
-  margin-right: 5rem;
+  padding: 0rem 7rem 0rem 3.3rem;
 }
 
 .DalmatiaSun-combined__image {
